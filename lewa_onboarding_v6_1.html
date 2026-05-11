@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEWA Academy — Onboarding</title>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --blue: #1A3C6E; --blue-light: #2D5FA6; --gold: #C9A84C; --light: #F5F7FA; --white: #ffffff; --gray: #6B7280; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'DM Sans', sans-serif; background: linear-gradient(135deg, #F0F4FA 0%, #E8EEF8 100%); min-height: 100vh; padding: 40px 20px; }
+  header { text-align: center; margin-bottom: 40px; }
+  .logo { display: inline-flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+  .logo-icon { width: 44px; height: 44px; background: var(--blue); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+  header h1 { font-family: 'Playfair Display', serif; color: var(--blue); font-size: 2rem; }
+  header p { color: var(--gray); font-size: 0.9rem; margin-top: 6px; }
+  .container { max-width: 700px; margin: 0 auto; }
+  .card { background: var(--white); border-radius: 20px; padding: 32px; margin-bottom: 20px; box-shadow: 0 2px 20px rgba(26,60,110,0.06); border: 1px solid rgba(26,60,110,0.06); }
+  .card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid #F0F4FA; }
+  .card-icon { width: 36px; height: 36px; background: #EEF4FF; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+  .card-header h2 { font-family: 'Playfair Display', serif; color: var(--blue); font-size: 1.1rem; font-weight: 700; }
+  .search-box { position: relative; }
+  .search-box input { width: 100%; padding: 14px 120px 14px 18px; border: 2px solid #E5E7EB; border-radius: 12px; font-family: 'DM Sans', sans-serif; font-size: 1rem; color: #1F2937; transition: all 0.2s; }
+  .search-box input:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 4px rgba(26,60,110,0.08); }
+  .search-btn { position: absolute; right: 8px; top: 50%; transform: translateY(-50%); background: var(--blue); color: white; border: none; border-radius: 8px; padding: 8px 16px; font-family: 'DM Sans', sans-serif; font-size: 0.85rem; font-weight: 500; cursor: pointer; }
+  .refresh-btn { position: absolute; right: 110px; top: 50%; transform: translateY(-50%); background: #EEF4FF; color: var(--blue); border: none; border-radius: 8px; padding: 8px 10px; cursor: pointer; font-size: 1rem; }
+  .sheet-status { font-size: 0.78rem; color: var(--gray); margin-top: 8px; }
+  .sheet-status.ok { color: #10B981; }
+  .sheet-status.error { color: #EF4444; }
+  .client-info { display: none; margin-top: 20px; background: #F8FAFF; border-radius: 12px; padding: 16px; border: 1px solid #E0E9FF; }
+  .client-info.visible { display: block; }
+  .client-info h3 { font-size: 0.8rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; font-weight: 600; }
+  .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .info-item { background: white; border-radius: 8px; padding: 10px 12px; border: 1px solid #E5E7EB; }
+  .info-item label { display: block; font-size: 0.72rem; color: var(--gray); margin-bottom: 2px; font-weight: 500; }
+  .info-item span { font-size: 0.88rem; color: #1F2937; font-weight: 500; }
+  .email-input { margin-top: 12px; }
+  .email-input label { display: block; font-size: 0.82rem; font-weight: 600; color: var(--blue); margin-bottom: 6px; }
+  .email-input input { width: 100%; padding: 10px 14px; border: 2px solid #E5E7EB; border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: 0.95rem; }
+  .email-input input:focus { outline: none; border-color: var(--blue); }
+  .steps { display: flex; flex-direction: column; gap: 12px; }
+  .step { display: flex; align-items: center; gap: 14px; padding: 14px; border-radius: 12px; background: #F8FAFF; border: 1px solid #E0E9FF; }
+  .step-num { width: 32px; height: 32px; background: var(--blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 600; flex-shrink: 0; }
+  .step-content { flex: 1; }
+  .step-content strong { display: block; font-size: 0.9rem; color: #1F2937; margin-bottom: 2px; }
+  .step-content span { font-size: 0.8rem; color: var(--gray); }
+  .step-status { font-size: 1.2rem; flex-shrink: 0; }
+  .btn { width: 100%; padding: 16px; background: var(--blue); color: white; border: none; border-radius: 12px; font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 10px; }
+  .btn:hover { background: var(--blue-light); }
+  .btn:disabled { background: #9CA3AF; cursor: not-allowed; }
+  .btn-gold { background: var(--gold); }
+  .btn-gold:hover { background: #b8943d; }
+  .log { background: #0F172A; border-radius: 12px; padding: 20px; font-family: 'Courier New', monospace; font-size: 0.82rem; color: #94A3B8; max-height: 280px; overflow-y: auto; display: none; margin-top: 16px; }
+  .log.visible { display: block; }
+  .log-line { margin-bottom: 6px; line-height: 1.5; }
+  .log-line.success { color: #34D399; }
+  .log-line.error { color: #F87171; }
+  .log-line.info { color: #60A5FA; }
+  .progress { display: none; margin-top: 16px; }
+  .progress.visible { display: block; }
+  .progress-bar { height: 6px; background: #E5E7EB; border-radius: 3px; overflow: hidden; margin-bottom: 8px; }
+  .progress-fill { height: 100%; background: linear-gradient(90deg, var(--blue), var(--blue-light)); border-radius: 3px; transition: width 0.5s ease; width: 0%; }
+  .progress-text { font-size: 0.82rem; color: var(--gray); text-align: center; }
+  .divider { border: none; border-top: 1px solid #F0F4FA; margin: 16px 0; }
+  .final-status { display: none; text-align: center; padding: 24px; }
+  .final-status.visible { display: block; }
+  .final-status .big-icon { font-size: 3rem; margin-bottom: 12px; }
+  .final-status h3 { font-family: 'Playfair Display', serif; color: var(--blue); font-size: 1.3rem; margin-bottom: 8px; }
+  .final-status p { color: var(--gray); font-size: 0.9rem; }
+  .clients-list { display: none; position: absolute; background: white; border: 1px solid #E5E7EB; border-radius: 8px; width: calc(100% - 130px); z-index: 10; box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-height: 200px; overflow-y: auto; }
+  .clients-list.visible { display: block; }
+  .client-option { padding: 10px 14px; cursor: pointer; font-size: 0.9rem; border-bottom: 1px solid #F0F4FA; }
+  .client-option:hover { background: #F8FAFF; color: var(--blue); }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">
+      <div class="logo-icon">🎓</div>
+      <h1>LEWA Academy</h1>
+    </div>
+    <p>Système d'onboarding automatique — Connecté à Google Sheets</p>
+  </header>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon">🔍</div>
+      <h2>Recherche client</h2>
+    </div>
+    <div class="search-box" style="position:relative">
+      <input type="text" id="client-search" placeholder="Tapez le nom d'un client..." autocomplete="off" oninput="filterClients()" onfocus="showList()">
+      <button class="refresh-btn" onclick="loadSheet()" title="Actualiser depuis Google Sheets">🔄</button>
+      <button class="search-btn" onclick="searchClient()">Rechercher</button>
+      <div class="clients-list" id="clients-list"></div>
+    </div>
+    <div class="sheet-status" id="sheet-status">⏳ Chargement du Google Sheet...</div>
+    <div class="client-info" id="client-info">
+      <h3>Informations récupérées depuis Google Sheets</h3>
+      <div class="info-grid" id="info-grid"></div>
+      <div class="email-input" id="email-input-container" style="display:none">
+        <label>📧 Email du client (non renseigné dans le Sheet)</label>
+        <input type="email" id="manual-email" placeholder="email@exemple.com">
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="workflow-card" style="display:none">
+    <div class="card-header">
+      <div class="card-icon">⚡</div>
+      <h2>Workflow d'onboarding</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content"><strong>Génération de la facture PDF</strong><span>Facture personnalisée + conversion PDF</span></div>
+        <div class="step-status" id="status-1">⏳</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content"><strong>Contrat DocuSeal</strong><span>Lien de signature personnalisé</span></div>
+        <div class="step-status" id="status-2">⏳</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content"><strong>Envoi email + pièces jointes</strong><span>Facture PDF + CGV en pièces jointes</span></div>
+        <div class="step-status" id="status-3">⏳</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="progress" id="progress">
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+      <div class="progress-text" id="progress-text">En attente...</div>
+    </div>
+    <div class="log" id="log"></div>
+    <div class="final-status" id="final-status"></div>
+    <div style="margin-top: 20px;">
+      <button class="btn btn-gold" id="launch-btn" onclick="launchOnboarding()">🚀 Lancer l'onboarding complet</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const CONFIG = {
+  EMAILJS_SERVICE_ID: 'service_aydrv8r',
+  EMAILJS_TEMPLATE_ID: 'template_rg9ym67',
+  EMAILJS_PUBLIC_KEY: '2K3xrox1AphpDCL2k',
+  QUESTIONNAIRE: 'https://forms.gle/e171r44qzrzX2qUN7',
+  DOCUSEAL_LINK: 'https://docuseal.com/d/DH2qvS9w2rJQgS',
+  SHEETS_API_KEY: 'AIzaSyDDOCe3FowhAtn1r0NiVg7J-JtLlsbfKJ4',
+  SHEET_ID: '19PDgyVW-X52S_GKf_62InfDkLu9T2t3_n7vg_39OTco',
+  SHEET_RANGE: 'A:K',  // 🆕 Étendu jusqu'à la colonne K (prix)
+  CGV_URL: 'https://aroulin31-debug.github.io/onboardingofffff/cgv.pdf',
+};
+
+emailjs.init(CONFIG.EMAILJS_PUBLIC_KEY);
+
+let allClients = [];
+let currentClient = null;
+
+// ── CHARGEMENT GOOGLE SHEET ──
+async function loadSheet() {
+  document.getElementById('sheet-status').textContent = '⏳ Chargement du Google Sheet...';
+  document.getElementById('sheet-status').className = 'sheet-status';
+  try {
+    const url = `https://sheets.googleapis.com/v4/spreadsheets/${CONFIG.SHEET_ID}/values/${CONFIG.SHEET_RANGE}?key=${CONFIG.SHEETS_API_KEY}`;
+    const res = await fetch(url);
+    const data = await res.json();
+    if (!data.values) throw new Error('Impossible de lire le Sheet');
+    
+    const rows = data.values.slice(1);
+    allClients = rows.map(row => ({
+      nom: row[0] || '',
+      adresse: row[1] || '',
+      email: row[2] || '',
+      paiement: row[3] || '1x',
+      date: row[4] || '',
+      moyen: row[5] || '',
+      date2: row[6] || '',
+      facture: row[8] || '',
+      // 🆕 Lecture du prix depuis la colonne K (index 10)
+      prix: parseFloat(String(row[10] || '0').replace(/[^\d,.-]/g, '').replace(',', '.')) || 2000,
+    })).filter(c => c.nom);
+
+    document.getElementById('sheet-status').textContent = `✅ ${allClients.length} clients chargés depuis Google Sheets`;
+    document.getElementById('sheet-status').className = 'sheet-status ok';
+  } catch (err) {
+    document.getElementById('sheet-status').textContent = '❌ Erreur de connexion au Google Sheet';
+    document.getElementById('sheet-status').className = 'sheet-status error';
+    console.error(err);
+  }
+}
+
+// ── RECHERCHE ET AUTOCOMPLETE ──
+function filterClients() {
+  const query = document.getElementById('client-search').value.trim().toLowerCase();
+  const list = document.getElementById('clients-list');
+  if (!query || query.length < 2) { list.classList.remove('visible'); return; }
+  
+  const matches = allClients.filter(c => c.nom.toLowerCase().includes(query));
+  if (matches.length === 0) { list.classList.remove('visible'); return; }
+  
+  list.innerHTML = matches.map(c => `<div class="client-option" onclick="selectClient('${c.nom}')">${c.nom} ${c.email ? '✉️' : '⚠️'}</div>`).join('');
+  list.classList.add('visible');
+}
+
+function showList() { filterClients(); }
+
+function selectClient(nom) {
+  document.getElementById('client-search').value = nom;
+  document.getElementById('clients-list').classList.remove('visible');
+  searchClient();
+}
+
+document.addEventListener('click', e => {
+  if (!e.target.closest('.search-box')) document.getElementById('clients-list').classList.remove('visible');
+});
+
+function searchClient() {
+  const query = document.getElementById('client-search').value.trim().toLowerCase();
+  if (!query) return;
+  const client = allClients.find(c => c.nom.toLowerCase().includes(query));
+  if (!client) { alert('Client non trouvé dans Google Sheets.'); return; }
+  
+  currentClient = client;
+  const prenom = client.nom.split(' ')[0];
+  
+  // 🆕 Calcul dynamique du montant à partir du prix du Sheet
+  const montantAffiche = client.paiement === '2x' ? client.prix / 2 : client.prix;
+  const montant = montantAffiche.toLocaleString('fr-FR') + ' €';
+  const prixTotal = client.prix.toLocaleString('fr-FR') + ' €';
+  
+  document.getElementById('info-grid').innerHTML = `
+    <div class="info-item"><label>Nom complet</label><span>${client.nom}</span></div>
+    <div class="info-item"><label>Prénom</label><span>${prenom}</span></div>
+    <div class="info-item"><label>Email</label><span>${client.email || '⚠️ Non renseigné'}</span></div>
+    <div class="info-item"><label>Date paiement</label><span>${client.date}</span></div>
+    <div class="info-item"><label>Adresse</label><span>${client.adresse || '⚠️ Non renseignée'}</span></div>
+    <div class="info-item"><label>Prix total</label><span>${prixTotal}</span></div>
+    <div class="info-item"><label>Montant facturé</label><span>${montant}</span></div>
+    <div class="info-item"><label>Moyen</label><span>${client.moyen}</span></div>
+    <div class="info-item"><label>Type</label><span>${client.paiement === '2x' ? 'En 2 fois (50%)' : 'En une fois'}</span></div>
+  `;
+
+  if (!client.email) {
+    document.getElementById('email-input-container').style.display = 'block';
+  } else {
+    document.getElementById('email-input-container').style.display = 'none';
+  }
+
+  document.getElementById('client-info').classList.add('visible');
+  document.getElementById('workflow-card').style.display = 'block';
+  document.getElementById('clients-list').classList.remove('visible');
+  resetWorkflow();
+}
+
+document.getElementById('client-search').addEventListener('keydown', e => { if (e.key === 'Enter') searchClient(); });
+
+// ── LOGS ──
+function log(msg, type = 'info') {
+  const logEl = document.getElementById('log');
+  logEl.classList.add('visible');
+  const line = document.createElement('div');
+  line.className = `log-line ${type}`;
+  const time = new Date().toLocaleTimeString('fr-FR');
+  const icons = { success: '✅', error: '❌', info: '→', warn: '⚠️' };
+  line.textContent = `[${time}] ${icons[type]} ${msg}`;
+  logEl.appendChild(line);
+  logEl.scrollTop = logEl.scrollHeight;
+}
+
+function setProgress(pct, text) {
+  document.getElementById('progress').classList.add('visible');
+  document.getElementById('progress-fill').style.width = pct + '%';
+  document.getElementById('progress-text').textContent = text;
+}
+
+function setStep(n, status) {
+  const icons = { pending: '⏳', success: '✅', error: '❌', loading: '🔄' };
+  document.getElementById(`status-${n}`).textContent = icons[status];
+}
+
+function resetWorkflow() {
+  [1,2,3].forEach(n => setStep(n, 'pending'));
+  document.getElementById('log').innerHTML = '';
+  document.getElementById('log').classList.remove('visible');
+  document.getElementById('progress').classList.remove('visible');
+  document.getElementById('final-status').classList.remove('visible');
+  document.getElementById('final-status').innerHTML = '';
+}
+
+// ── GÉNÉRATION FACTURE HTML (prix dynamique) ──
+function generateInvoiceHTML(client) {
+  // 🆕 Calcul à partir du prix lu dans le Sheet
+  const prixTotal = client.prix;
+  const montantNum = client.paiement === '2x' ? prixTotal / 2 : prixTotal;
+  const montant = montantNum.toLocaleString('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const prixTotalFormat = prixTotal.toLocaleString('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  
+  const descLigne1 = client.paiement === '2x' ? 'Acompte de 50% — Action de formation LEWA' : 'Action de formation LEWA';
+  const descLigne2 = client.paiement === '2x' 
+    ? `Acompte de 50% à la commande sur un total de ${prixTotalFormat} €.` 
+    : 'Paiement en une fois.';
+  const moyenLabel = client.moyen === 'Stripe' ? `Paiement effectué par carte bancaire le ${client.date}.` : `Paiement effectué par virement bancaire le ${client.date}.`;
+  
+  return `<!DOCTYPE html><html><head><meta charset="UTF-8"><style>body{font-family:Arial,sans-serif;font-size:13px;color:#333;margin:40px}h1{font-size:28px;color:#1A3C6E;margin-bottom:4px}.meta{color:#555;font-size:12px;margin-bottom:20px}.parties{display:flex;justify-content:space-between;margin-bottom:24px}.partie{width:48%}.partie strong{display:block;font-size:13px;color:#1A3C6E;margin-bottom:6px}.partie p{margin:2px 0;font-size:12px}hr{border:none;border-top:1px solid #ddd;margin:20px 0}table{width:100%;border-collapse:collapse;margin-bottom:20px}th{background:#f0f4fa;color:#1A3C6E;padding:8px 10px;text-align:left;font-size:12px}td{padding:10px;border-bottom:1px solid #eee;font-size:12px}.totaux{text-align:right;margin-bottom:20px}.totaux div{margin:4px 0}.total-ttc{font-weight:bold;font-size:14px;color:#1A3C6E}.paiement{background:#f8faff;border-radius:8px;padding:14px;font-size:12px;color:#555}.footer{margin-top:40px;font-size:10px;color:#999;border-top:1px solid #eee;padding-top:10px}</style></head><body><h1>Facture</h1><div class="meta">Numéro : F-2026-AUTO<br>Date : ${client.date}</div><div class="parties"><div class="partie"><strong>Learn Languages With Antoine</strong><p>60 rue François 1er, 75008 Paris</p><p>hello@englishwithantoine.com</p><p>SIREN : 102244829</p></div><div class="partie"><strong>${client.nom}</strong><p>${client.adresse||''}</p><p>${client.email||''}</p></div></div><hr><table><thead><tr><th>Description</th><th>Qté</th><th>Prix HT</th><th>TVA</th><th>Total TTC</th></tr></thead><tbody><tr><td><strong>${descLigne1}</strong><br>${descLigne2}</td><td>1</td><td>${montant} €</td><td>0%</td><td><strong>${montant} €</strong></td></tr></tbody></table><div class="totaux"><div>TOTAL HT : ${montant} €</div><div>TOTAL TVA : 0,00 €</div><div class="total-ttc">TOTAL TTC : ${montant} €</div></div><div class="paiement"><strong>Paiement</strong><br>${moyenLabel}<br>Facture acquittée le ${client.date}.<br>TVA non applicable, article 293 B du CGI.</div><div class="footer">Learn Languages With Antoine, SASU, SIREN N°102244829, 60 rue François 1er 75008 Paris</div></body></html>`;
+}
+
+// ── CONVERSION HTML → PDF (Blob) ──
+async function htmlToPdfBlob(htmlString) {
+  const container = document.createElement('div');
+  container.innerHTML = htmlString;
+  container.style.position = 'absolute';
+  container.style.left = '-10000px';
+  document.body.appendChild(container);
+  
+  try {
+    const opt = {
+      margin: 0,
+      filename: 'facture.pdf',
+      image: { type: 'jpeg', quality: 0.95 },
+      html2canvas: { scale: 2, useCORS: true },
+      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    };
+    const blob = await html2pdf().set(opt).from(container).outputPdf('blob');
+    return blob;
+  } finally {
+    document.body.removeChild(container);
+  }
+}
+
+// ── CONVERSION BLOB → BASE64 ──
+function blobToBase64(blob) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      const base64 = reader.result.split(',')[1];
+      resolve(base64);
+    };
+    reader.onerror = reject;
+    reader.readAsDataURL(blob);
+  });
+}
+
+// ── RÉCUPÉRATION DU PDF CGV ──
+async function fetchCGV() {
+  const res = await fetch(CONFIG.CGV_URL);
+  if (!res.ok) throw new Error('Impossible de charger le PDF des CGV');
+  return await res.blob();
+}
+
+// ── LANCEMENT ONBOARDING ──
+async function launchOnboarding() {
+  if (!currentClient) { alert('Veuillez d\'abord rechercher un client.'); return; }
+  
+  let email = currentClient.email;
+  if (!email) {
+    email = document.getElementById('manual-email').value.trim();
+    if (!email) { alert('⚠️ Veuillez saisir l\'email du client !'); return; }
+  }
+
+  const btn = document.getElementById('launch-btn');
+  btn.disabled = true;
+  btn.textContent = '⏳ Onboarding en cours...';
+  resetWorkflow();
+
+  const prenom = currentClient.nom.split(' ')[0];
+  const montantFacture = currentClient.paiement === '2x' ? currentClient.prix / 2 : currentClient.prix;
+
+  try {
+    // ── ÉTAPE 1 : Génération facture PDF ──
+    setStep(1, 'loading');
+    setProgress(10, 'Génération de la facture...');
+    log(`Démarrage onboarding pour ${currentClient.nom}`, 'info');
+    log(`Prix total : ${currentClient.prix.toLocaleString('fr-FR')} € | Montant facturé : ${montantFacture.toLocaleString('fr-FR')} € (${currentClient.paiement})`, 'info');
+    log('Génération du HTML de la facture...', 'info');
+    const invoiceHTML = generateInvoiceHTML(currentClient);
+    
+    log('Conversion HTML → PDF...', 'info');
+    const factureBlob = await htmlToPdfBlob(invoiceHTML);
+    const factureSizeKB = Math.round(factureBlob.size / 1024);
+    log(`Facture PDF générée (${factureSizeKB} Ko) ✅`, 'success');
+    
+    log('Conversion en base64 pour EmailJS...', 'info');
+    const factureBase64 = await blobToBase64(factureBlob);
+    
+    log('Récupération du PDF des CGV...', 'info');
+    const cgvBlob = await fetchCGV();
+    const cgvSizeKB = Math.round(cgvBlob.size / 1024);
+    log(`CGV récupérées (${cgvSizeKB} Ko) ✅`, 'success');
+    const cgvBase64 = await blobToBase64(cgvBlob);
+    
+    setStep(1, 'success');
+    setProgress(40, 'Facture + CGV prêtes ✅');
+
+    // ── ÉTAPE 2 : DocuSeal ──
+    setStep(2, 'loading');
+    setProgress(55, 'Préparation du contrat...');
+    log('Préparation du lien DocuSeal...', 'info');
+    const docuSealLink = CONFIG.DOCUSEAL_LINK;
+    log('Lien contrat prêt ✅', 'success');
+    setStep(2, 'success');
+    setProgress(70, 'Contrat prêt ✅');
+
+    // ── ÉTAPE 3 : EmailJS avec pièces jointes ──
+    setStep(3, 'loading');
+    setProgress(80, 'Envoi de l\'email avec pièces jointes...');
+    log('Envoi de l\'email via EmailJS (facture + CGV)...', 'info');
+
+    const message = `Bonjour ${prenom},
+
+C'est officiel — tu fais maintenant partie de la LEWA Academy.
+
+À partir d'aujourd'hui, l'anglais ne sera plus un frein. Ce sera ta force.
+
+Pour bien démarrer, voici les 2 étapes à suivre dans l'ordre :
+
+✍️ Étape 1 — Signe ton contrat de formation
+Ton contrat t'attend ci-dessous, ça prend moins d'une minute :
+👉 ${docuSealLink}
+
+📋 Étape 2 — Réponds au questionnaire de démarrage
+Une fois le contrat signé, prends 2 minutes pour remplir ce questionnaire :
+👉 ${CONFIG.QUESTIONNAIRE}
+
+📎 Tu trouveras également en pièces jointes ta facture ainsi que nos conditions générales de vente.
+
+À très vite,
+Antoine
+
+—
+Learn Languages With Antoine
+hello@englishwithantoine.com
++33 7 43 01 67 55`;
+
+    const nomFichier = currentClient.nom.replace(/\s+/g, '_');
+
+    await emailjs.send(CONFIG.EMAILJS_SERVICE_ID, CONFIG.EMAILJS_TEMPLATE_ID, {
+      subject: 'Bienvenue dans la LEWA Academy',
+      to_email: email,
+      message: message,
+      facture_name: `Facture_${nomFichier}.pdf`,
+      facture_content: factureBase64,
+      cgv_name: 'CGV_LEWA_Academy.pdf',
+      cgv_content: cgvBase64,
+    });
+
+    log(`Email + 2 pièces jointes envoyés à ${email} ✅`, 'success');
+    setStep(3, 'success');
+    setProgress(100, 'Onboarding terminé ! 🎉');
+
+    document.getElementById('final-status').innerHTML = `
+      <div class="big-icon">🎉</div>
+      <h3>Onboarding envoyé avec succès !</h3>
+      <p><strong>${currentClient.nom}</strong> → <strong>${email}</strong></p>
+      <p style="margin-top:8px">💶 Montant facturé : <strong>${montantFacture.toLocaleString('fr-FR')} €</strong></p>
+      <p>✅ Lien contrat DocuSeal + Questionnaire</p>
+      <p>📎 Facture (${factureSizeKB} Ko) + CGV (${cgvSizeKB} Ko)</p>
+    `;
+    document.getElementById('final-status').classList.add('visible');
+
+  } catch (err) {
+    log('Erreur: ' + (err.text || err.message || JSON.stringify(err)), 'error');
+    setProgress(0, 'Erreur ❌');
+    document.getElementById('final-status').innerHTML = `<div class="big-icon">❌</div><h3>Erreur</h3><p>${err.text || err.message || JSON.stringify(err)}</p>`;
+    document.getElementById('final-status').classList.add('visible');
+    [1,2,3].forEach(n => { if (document.getElementById(`status-${n}`).textContent === '🔄') setStep(n, 'error'); });
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '🚀 Lancer l\'onboarding complet';
+  }
+}
+
+loadSheet();
+</script>
+</body>
+</html>
