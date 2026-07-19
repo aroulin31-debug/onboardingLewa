@@ -1,0 +1,28 @@
+# Liste des Reels Instagram à analyser (une URL par ligne).
+# Les lignes vides et celles commençant par # sont ignorées.
+# Ordre = ordre de traitement.
+https://www.instagram.com/reel/DYFgjNhtAYm/
+https://www.instagram.com/reel/DUlq19aDb_h/
+https://www.instagram.com/reel/DU3lUEjDSBm/
+https://www.instagram.com/reel/DTZ_7rPjXfy/
+https://www.instagram.com/reel/DVv1idVDaW7/
+https://www.instagram.com/reel/DT2Rg2Ijatd/
+https://www.instagram.com/reel/DVT4EELCZWw/
+https://www.instagram.com/reel/DU_YKg-DcH4/
+https://www.instagram.com/reel/DXHuiQhDfqe/
+https://www.instagram.com/reel/DUd5GuODQ_G/
+https://www.instagram.com/reel/DYutAeGtt3i/
+https://www.instagram.com/reel/DTcbTaYjSjf/
+https://www.instagram.com/reel/DUGr7kJDQb3/
+https://www.instagram.com/reel/DXSB0q2DcIt/
+https://www.instagram.com/reel/DVoidSKDZFW/
+https://www.instagram.com/reel/DUYs6r5jaVO/
+https://www.instagram.com/reel/DYcqCKXtR-c/
+https://www.instagram.com/reel/DVjfpvcDZYX/
+https://www.instagram.com/reel/DWwhBmnDUr2/
+https://www.instagram.com/reel/DYIG2c7BEn5/
+https://www.instagram.com/reel/DYAXPMJNJuR/
+https://www.instagram.com/reel/DYC8ClPt3n2/
+https://www.instagram.com/reel/DYXnlpLN5C6/
+https://www.instagram.com/reel/DW611XgjVpA/
+https://www.instagram.com/reel/DT-7y6Djcj_/
