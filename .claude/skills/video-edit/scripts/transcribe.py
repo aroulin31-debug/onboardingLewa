@@ -71,9 +71,29 @@ def transcribe(audio_path: Path, model_size: str = "base") -> list[dict]:
 
     # WhisperX doesn't support MPS yet; CPU + int8 is the safe path on Mac.
     device = "cpu"
-    compute_type = "int8"
+    compute_type = os.environ.get("WHISPER_COMPUTE_TYPE", "int8")
 
-    model = whisperx.load_model(model_size, device=device, compute_type=compute_type)
+    # Anti-hallucination / anti-loop decoding. Whisper on some audio (esp.
+    # non-English, or with long pauses) falls into repetition loops ("C'est très
+    # simple" ×13) or degenerates. Disabling condition_on_previous_text plus an
+    # n-gram no-repeat, a repetition penalty and a temperature fallback makes
+    # decoding robust without changing the model. Falls back cleanly if the
+    # installed whisperx rejects any option.
+    asr_options = {
+        "condition_on_previous_text": False,
+        "no_repeat_ngram_size": 3,
+        "repetition_penalty": 1.15,
+        "temperatures": [0.0, 0.2, 0.4, 0.6],
+    }
+    try:
+        model = whisperx.load_model(
+            model_size, device=device, compute_type=compute_type,
+            asr_options=asr_options,
+        )
+    except Exception as e:  # pragma: no cover - depends on whisperx version
+        print(f"[transcribe] asr_options unsupported ({e}); using defaults",
+              file=sys.stderr)
+        model = whisperx.load_model(model_size, device=device, compute_type=compute_type)
     audio = whisperx.load_audio(str(audio_path))
     result = model.transcribe(audio, batch_size=8)
     language = result.get("language", "en")

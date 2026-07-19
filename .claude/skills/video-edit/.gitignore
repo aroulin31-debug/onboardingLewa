@@ -5,3 +5,4 @@ remotion/out.mp4
 *.preview.mp4
 *.enhanced.mp4
 *.scored.mp4
+remotion/public/job-*/
