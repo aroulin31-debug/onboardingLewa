@@ -1,0 +1,7 @@
+.venv/
+remotion/node_modules/
+remotion/out.mp4
+.env
+*.preview.mp4
+*.enhanced.mp4
+*.scored.mp4
