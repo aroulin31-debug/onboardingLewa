@@ -85,6 +85,8 @@ def transcribe(audio_path: Path, model_size: str = "base") -> list[dict]:
         "repetition_penalty": 1.15,
         "temperatures": [0.0, 0.2, 0.4, 0.6],
     }
+    if os.environ.get("WHISPER_ANTILOOP", "1") == "0":
+        asr_options = None  # keep full context (more complete, may loop)
     try:
         model = whisperx.load_model(
             model_size, device=device, compute_type=compute_type,
