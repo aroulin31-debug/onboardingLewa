@@ -65,38 +65,35 @@ for seg in segments:
     if m and seg_words:
         tic_cuts.append([seg_words[0]["start"], seg_words[0]["end"], "faux-depart"])
 
-# ---- 3. Repetitions semantiques (TF-IDF cosine) ----------------------------
-def tfidf_vectors(texts):
-    docs = [norm(t).split() for t in texts]
-    df = Counter()
-    for d in set_tokens(docs):
-        df[d] += 1
-    N = len(docs)
-    vecs = []
-    for d in docs:
-        tf = Counter(d)
-        v = {}
-        for term, c in tf.items():
-            idf = math.log((N + 1) / (df[term] + 1)) + 1
-            v[term] = c * idf
-        vecs.append(v)
-    return vecs
+# ---- 3. Repetitions semantiques : detection des PRISES MULTIPLES ------------
+# Les retakes sont eclates sur plusieurs segments Whisper et reformules ; une
+# cosine segment-a-segment les rate. On raisonne par "containment" de bigrammes
+# de mots de contenu (stopwords retires) : si le contenu d'un segment ANTERIEUR
+# se retrouve en grande partie dans un segment POSTERIEUR proche (<30s), le
+# premier est une prise abandonnee -> on la coupe (le brief : garder la derniere,
+# generalement la plus fluide).
+STOP = set("le la les un une de des du d l et en a à au aux que qui c ce se s j "
+           "elle il on ne pas plus me te son sa ses tout tous toute ça cette cet "
+           "dans sur pour est sont etait était mais ou où comme si tu ta tes te "
+           "je nous vous ils elles y en lui leur ne n qu quand".split())
 
-def set_tokens(docs):
-    for d in docs:
-        for term in set(d):
-            yield term
+def content_bigrams(text):
+    toks = [t for t in norm(text).split() if t not in STOP and len(t) > 2]
+    if len(toks) < 2:
+        return set(toks)
+    return set(zip(toks, toks[1:]))
 
-def cosine(a, b):
-    common = set(a) & set(b)
-    num = sum(a[t] * b[t] for t in common)
-    na = math.sqrt(sum(x * x for x in a.values()))
-    nb = math.sqrt(sum(x * x for x in b.values()))
-    return num / (na * nb) if na and nb else 0.0
+def containment(a, b):
+    """part des bigrammes de a presents dans b (a inclus dans b ?)"""
+    if not a:
+        return 0.0
+    return len(a & b) / len(a)
 
+CONTAIN_THRESH = 0.50   # >=50% du contenu du 1er reapparait dans le 2e
+PROX = 30.0             # les 2 prises sont a moins de 30s
+
+big = [content_bigrams(s["text"]) for s in segments]
 rep_cuts = []
-texts = [s["text"] for s in segments]
-vecs = tfidf_vectors(texts)
 dropped = set()
 for i in range(len(segments)):
     if i in dropped:
@@ -104,22 +101,15 @@ for i in range(len(segments)):
     for j in range(i + 1, len(segments)):
         if j in dropped:
             continue
-        sim = cosine(vecs[i], vecs[j])
-        if sim > SIM_THRESH:
-            # garde la meilleure prise : celle avec le moins de tics ;
-            # a egalite, la derniere (plus fluide). On droppe l'autre.
-            def tic_density(seg):
-                toks = norm(seg["text"]).split()
-                if not toks:
-                    return 1.0
-                return sum(1 for t in toks if t in FILLERS) / len(toks)
-            di, dj = tic_density(segments[i]), tic_density(segments[j])
-            drop = i if di > dj else (j if dj > di else i)  # egalite -> garde j (dernier)
-            keep = j if drop == i else i
-            dropped.add(drop)
-            d = segments[drop]
-            rep_cuts.append([d["start"], d["end"],
-                             "repet(sim=%.2f,garde #%d)" % (sim, keep)])
+        if segments[j]["start"] - segments[i]["end"] > PROX:
+            break
+        c = containment(big[i], big[j])
+        if c >= CONTAIN_THRESH and len(big[i]) >= 3:
+            # segment i (prise anterieure) abandonne au profit de j
+            dropped.add(i)
+            rep_cuts.append([segments[i]["start"], segments[i]["end"],
+                             "prise-abandonnee(%.0f%%->#%d)" % (100 * c, j)])
+            break
 
 # ---- 4. Fusionner tous les intervalles a couper ---------------------------
 all_cuts = cuts + tic_cuts + rep_cuts

@@ -1,0 +1,2272 @@
+[
+ {
+  "word": "[*]",
+  "start": 0.08,
+  "end": 0.32
+ },
+ {
+  "word": "Elle",
+  "start": 0.32,
+  "end": 0.6
+ },
+ {
+  "word": "comprenait",
+  "start": 0.6,
+  "end": 1.18
+ },
+ {
+  "word": "chaque",
+  "start": 1.18,
+  "end": 1.36
+ },
+ {
+  "word": "mot",
+  "start": 1.36,
+  "end": 1.54
+ },
+ {
+  "word": "de",
+  "start": 1.54,
+  "end": 1.66
+ },
+ {
+  "word": "la",
+  "start": 1.66,
+  "end": 1.74
+ },
+ {
+  "word": "réunion",
+  "start": 1.74,
+  "end": 2.06
+ },
+ {
+  "word": "et",
+  "start": 2.06,
+  "end": 2.22
+ },
+ {
+  "word": "elle",
+  "start": 2.22,
+  "end": 2.34
+ },
+ {
+  "word": "n'a",
+  "start": 2.34,
+  "end": 2.54
+ },
+ {
+  "word": "pas",
+  "start": 2.54,
+  "end": 2.62
+ },
+ {
+  "word": "dit",
+  "start": 2.62,
+  "end": 2.78
+ },
+ {
+  "word": "une",
+  "start": 2.78,
+  "end": 3.04
+ },
+ {
+  "word": "seule",
+  "start": 3.04,
+  "end": 3.34
+ },
+ {
+  "word": "[*]",
+  "start": 3.34,
+  "end": 3.46
+ },
+ {
+  "word": "phrase",
+  "start": 3.46,
+  "end": 3.58
+ },
+ {
+  "word": "en",
+  "start": 3.58,
+  "end": 3.9
+ },
+ {
+  "word": "50",
+  "start": 3.9,
+  "end": 4.26
+ },
+ {
+  "word": "minutes.",
+  "start": 4.26,
+  "end": 4.66
+ },
+ {
+  "word": "Manager",
+  "start": 5.86,
+  "end": 6.08
+ },
+ {
+  "word": "dans",
+  "start": 6.08,
+  "end": 6.36
+ },
+ {
+  "word": "un",
+  "start": 6.36,
+  "end": 6.48
+ },
+ {
+  "word": "groupe",
+  "start": 6.48,
+  "end": 6.68
+ },
+ {
+  "word": "international,",
+  "start": 6.68,
+  "end": 7.2
+ },
+ {
+  "word": "elle",
+  "start": 7.56,
+  "end": 7.78
+ },
+ {
+  "word": "regardait",
+  "start": 7.78,
+  "end": 8.2
+ },
+ {
+  "word": "des",
+  "start": 8.2,
+  "end": 8.32
+ },
+ {
+  "word": "séries",
+  "start": 8.32,
+  "end": 8.58
+ },
+ {
+  "word": "en",
+  "start": 8.58,
+  "end": 8.7
+ },
+ {
+  "word": "VO",
+  "start": 8.7,
+  "end": 8.9
+ },
+ {
+  "word": "sans",
+  "start": 8.9,
+  "end": 9.12
+ },
+ {
+  "word": "sous-titres,",
+  "start": 9.12,
+  "end": 9.49
+ },
+ {
+  "word": "podcasts",
+  "start": 9.49,
+  "end": 10.0
+ },
+ {
+  "word": "en",
+  "start": 10.0,
+  "end": 10.24
+ },
+ {
+  "word": "anglais",
+  "start": 10.24,
+  "end": 10.56
+ },
+ {
+  "word": "tous",
+  "start": 10.56,
+  "end": 10.7
+ },
+ {
+  "word": "les",
+  "start": 10.7,
+  "end": 10.88
+ },
+ {
+  "word": "matins",
+  "start": 10.88,
+  "end": 11.26
+ },
+ {
+  "word": "dans",
+  "start": 11.26,
+  "end": 11.36
+ },
+ {
+  "word": "le",
+  "start": 11.36,
+  "end": 11.56
+ },
+ {
+  "word": "métro,",
+  "start": 11.56,
+  "end": 11.86
+ },
+ {
+  "word": "deux",
+  "start": 11.9,
+  "end": 12.1
+ },
+ {
+  "word": "newsletters.",
+  "start": 12.1,
+  "end": 12.66
+ },
+ {
+  "word": "Elle",
+  "start": 14.52,
+  "end": 14.84
+ },
+ {
+  "word": "était",
+  "start": 14.84,
+  "end": 15.02
+ },
+ {
+  "word": "manager,",
+  "start": 15.02,
+  "end": 15.34
+ },
+ {
+  "word": "[*]",
+  "start": 15.56,
+  "end": 16.18
+ },
+ {
+  "word": "elle",
+  "start": 16.18,
+  "end": 16.6
+ },
+ {
+  "word": "est",
+  "start": 16.6,
+  "end": 16.78
+ },
+ {
+  "word": "manager",
+  "start": 16.78,
+  "end": 17.04
+ },
+ {
+  "word": "dans",
+  "start": 17.04,
+  "end": 17.26
+ },
+ {
+  "word": "un",
+  "start": 17.26,
+  "end": 17.38
+ },
+ {
+  "word": "groupe",
+  "start": 17.38,
+  "end": 17.54
+ },
+ {
+  "word": "international,",
+  "start": 17.54,
+  "end": 17.94
+ },
+ {
+  "word": "elle",
+  "start": 18.32,
+  "end": 18.52
+ },
+ {
+  "word": "regardait",
+  "start": 18.52,
+  "end": 18.92
+ },
+ {
+  "word": "ses",
+  "start": 18.92,
+  "end": 19.02
+ },
+ {
+  "word": "séries",
+  "start": 19.02,
+  "end": 19.32
+ },
+ {
+  "word": "en",
+  "start": 19.32,
+  "end": 19.44
+ },
+ {
+  "word": "VO",
+  "start": 19.44,
+  "end": 19.6
+ },
+ {
+  "word": "sans",
+  "start": 19.6,
+  "end": 19.76
+ },
+ {
+  "word": "sous-titres,",
+  "start": 19.76,
+  "end": 20.28
+ },
+ {
+  "word": "des",
+  "start": 20.38,
+  "end": 20.48
+ },
+ {
+  "word": "podcasts",
+  "start": 20.48,
+  "end": 20.72
+ },
+ {
+  "word": "en",
+  "start": 20.72,
+  "end": 21.0
+ },
+ {
+  "word": "anglais",
+  "start": 21.0,
+  "end": 21.22
+ },
+ {
+  "word": "tous",
+  "start": 21.22,
+  "end": 21.4
+ },
+ {
+  "word": "les",
+  "start": 21.4,
+  "end": 21.56
+ },
+ {
+  "word": "matins",
+  "start": 21.56,
+  "end": 21.9
+ },
+ {
+  "word": "dans",
+  "start": 21.9,
+  "end": 22.0
+ },
+ {
+  "word": "le",
+  "start": 22.0,
+  "end": 22.16
+ },
+ {
+  "word": "métro,",
+  "start": 22.16,
+  "end": 22.46
+ },
+ {
+  "word": "elle",
+  "start": 22.76,
+  "end": 22.82
+ },
+ {
+  "word": "était",
+  "start": 22.82,
+  "end": 23.0
+ },
+ {
+  "word": "abonnée",
+  "start": 23.0,
+  "end": 23.34
+ },
+ {
+  "word": "à",
+  "start": 23.34,
+  "end": 23.44
+ },
+ {
+  "word": "deux",
+  "start": 23.44,
+  "end": 23.64
+ },
+ {
+  "word": "newsletters",
+  "start": 23.64,
+  "end": 24.22
+ },
+ {
+  "word": "en",
+  "start": 24.22,
+  "end": 24.38
+ },
+ {
+  "word": "anglais,",
+  "start": 24.38,
+  "end": 24.68
+ },
+ {
+  "word": "[*]",
+  "start": 24.74,
+  "end": 24.96
+ },
+ {
+  "word": "sa",
+  "start": 24.96,
+  "end": 25.16
+ },
+ {
+  "word": "compréhension,",
+  "start": 25.16,
+  "end": 25.82
+ },
+ {
+  "word": "c'était",
+  "start": 25.88,
+  "end": 26.46
+ },
+ {
+  "word": "le",
+  "start": 26.46,
+  "end": 26.9
+ },
+ {
+  "word": "meilleur",
+  "start": 26.9,
+  "end": 27.44
+ },
+ {
+  "word": "outil.",
+  "start": 27.44,
+  "end": 27.84
+ },
+ {
+  "word": "[*]",
+  "start": 30.0,
+  "end": 32.14
+ },
+ {
+  "word": "Quand",
+  "start": 32.14,
+  "end": 32.38
+ },
+ {
+  "word": "on",
+  "start": 32.38,
+  "end": 32.8
+ },
+ {
+  "word": "parlait",
+  "start": 32.8,
+  "end": 33.06
+ },
+ {
+  "word": "de",
+  "start": 33.06,
+  "end": 33.18
+ },
+ {
+  "word": "ça,",
+  "start": 33.18,
+  "end": 33.3
+ },
+ {
+  "word": "quand",
+  "start": 33.36,
+  "end": 33.78
+ },
+ {
+  "word": "[*]",
+  "start": 33.78,
+  "end": 34.52
+ },
+ {
+  "word": "je",
+  "start": 34.52,
+  "end": 35.18
+ },
+ {
+  "word": "lui",
+  "start": 35.18,
+  "end": 35.34
+ },
+ {
+  "word": "demandais",
+  "start": 35.34,
+  "end": 35.64
+ },
+ {
+  "word": "est-ce",
+  "start": 35.64,
+  "end": 35.8
+ },
+ {
+  "word": "qu'elle",
+  "start": 35.8,
+  "end": 35.9
+ },
+ {
+  "word": "comprenait",
+  "start": 35.9,
+  "end": 36.3
+ },
+ {
+  "word": "bien,",
+  "start": 36.3,
+  "end": 36.38
+ },
+ {
+  "word": "[*]",
+  "start": 36.38,
+  "end": 36.5
+ },
+ {
+  "word": "elle",
+  "start": 36.5,
+  "end": 36.7
+ },
+ {
+  "word": "me",
+  "start": 36.7,
+  "end": 36.8
+ },
+ {
+  "word": "disait",
+  "start": 36.8,
+  "end": 37.08
+ },
+ {
+  "word": "qu'elle",
+  "start": 37.08,
+  "end": 37.28
+ },
+ {
+  "word": "était",
+  "start": 37.28,
+  "end": 37.44
+ },
+ {
+  "word": "le",
+  "start": 37.44,
+  "end": 37.56
+ },
+ {
+  "word": "meilleur.",
+  "start": 37.56,
+  "end": 37.86
+ },
+ {
+  "word": "Quand",
+  "start": 39.5,
+  "end": 39.64
+ },
+ {
+  "word": "je",
+  "start": 39.64,
+  "end": 39.74
+ },
+ {
+  "word": "lui",
+  "start": 39.74,
+  "end": 39.86
+ },
+ {
+  "word": "demandais",
+  "start": 39.86,
+  "end": 40.12
+ },
+ {
+  "word": "est-ce",
+  "start": 40.12,
+  "end": 40.36
+ },
+ {
+  "word": "qu'elle",
+  "start": 40.36,
+  "end": 40.44
+ },
+ {
+  "word": "comprenait",
+  "start": 40.44,
+  "end": 40.92
+ },
+ {
+  "word": "bien,",
+  "start": 40.92,
+  "end": 41.1
+ },
+ {
+  "word": "elle",
+  "start": 41.12,
+  "end": 41.24
+ },
+ {
+  "word": "me",
+  "start": 41.24,
+  "end": 41.34
+ },
+ {
+  "word": "disait",
+  "start": 41.34,
+  "end": 41.56
+ },
+ {
+  "word": "oui,",
+  "start": 41.56,
+  "end": 41.68
+ },
+ {
+  "word": "[*]",
+  "start": 41.68,
+  "end": 41.7
+ },
+ {
+  "word": "je",
+  "start": 41.7,
+  "end": 41.86
+ },
+ {
+  "word": "suis",
+  "start": 41.86,
+  "end": 42.06
+ },
+ {
+  "word": "meilleur",
+  "start": 42.06,
+  "end": 42.28
+ },
+ {
+  "word": "que",
+  "start": 42.28,
+  "end": 42.5
+ },
+ {
+  "word": "la",
+  "start": 42.5,
+  "end": 42.62
+ },
+ {
+  "word": "plupart",
+  "start": 42.62,
+  "end": 42.9
+ },
+ {
+  "word": "de",
+  "start": 42.9,
+  "end": 43.08
+ },
+ {
+  "word": "mes",
+  "start": 43.08,
+  "end": 43.24
+ },
+ {
+  "word": "collègues.",
+  "start": 43.24,
+  "end": 43.6
+ },
+ {
+  "word": "Mais",
+  "start": 43.9,
+  "end": 44.02
+ },
+ {
+  "word": "ce",
+  "start": 44.02,
+  "end": 44.1
+ },
+ {
+  "word": "jour-là,",
+  "start": 44.1,
+  "end": 44.54
+ },
+ {
+  "word": "son",
+  "start": 44.58,
+  "end": 44.72
+ },
+ {
+  "word": "directeur",
+  "start": 44.72,
+  "end": 45.2
+ },
+ {
+  "word": "se",
+  "start": 45.2,
+  "end": 45.3
+ },
+ {
+  "word": "tourne",
+  "start": 45.3,
+  "end": 45.6
+ },
+ {
+  "word": "vers",
+  "start": 45.6,
+  "end": 45.74
+ },
+ {
+  "word": "elle",
+  "start": 45.74,
+  "end": 45.96
+ },
+ {
+  "word": "et",
+  "start": 45.96,
+  "end": 46.06
+ },
+ {
+  "word": "lui",
+  "start": 46.06,
+  "end": 46.24
+ },
+ {
+  "word": "demande",
+  "start": 46.24,
+  "end": 46.56
+ },
+ {
+  "word": "son",
+  "start": 46.56,
+  "end": 46.72
+ },
+ {
+  "word": "avis",
+  "start": 46.72,
+  "end": 46.96
+ },
+ {
+  "word": "devant",
+  "start": 46.96,
+  "end": 47.42
+ },
+ {
+  "word": "tout",
+  "start": 47.42,
+  "end": 47.66
+ },
+ {
+  "word": "le",
+  "start": 47.66,
+  "end": 47.76
+ },
+ {
+  "word": "monde.",
+  "start": 47.76,
+  "end": 47.9
+ },
+ {
+  "word": "Et",
+  "start": 47.9,
+  "end": 48.16
+ },
+ {
+  "word": "elle",
+  "start": 48.16,
+  "end": 48.28
+ },
+ {
+  "word": "avait",
+  "start": 48.28,
+  "end": 48.5
+ },
+ {
+  "word": "la",
+  "start": 48.5,
+  "end": 48.9
+ },
+ {
+  "word": "réponse",
+  "start": 48.9,
+  "end": 49.26
+ },
+ {
+  "word": "complète,",
+  "start": 49.26,
+  "end": 49.92
+ },
+ {
+  "word": "mais",
+  "start": 49.96,
+  "end": 50.36
+ },
+ {
+  "word": "tout",
+  "start": 50.36,
+  "end": 50.44
+ },
+ {
+  "word": "ça",
+  "start": 50.44,
+  "end": 50.7
+ },
+ {
+  "word": "en",
+  "start": 50.7,
+  "end": 50.96
+ },
+ {
+  "word": "français",
+  "start": 50.96,
+  "end": 51.32
+ },
+ {
+  "word": "dans",
+  "start": 51.32,
+  "end": 51.54
+ },
+ {
+  "word": "sa",
+  "start": 51.54,
+  "end": 51.74
+ },
+ {
+  "word": "tête.",
+  "start": 51.74,
+  "end": 51.94
+ },
+ {
+  "word": "Elle",
+  "start": 52.28,
+  "end": 52.32
+ },
+ {
+  "word": "a",
+  "start": 52.32,
+  "end": 52.44
+ },
+ {
+  "word": "dit",
+  "start": 52.44,
+  "end": 52.64
+ },
+ {
+  "word": "I",
+  "start": 52.64,
+  "end": 52.78
+ },
+ {
+  "word": "agree,",
+  "start": 52.78,
+  "end": 53.12
+ },
+ {
+  "word": "[*]",
+  "start": 53.32,
+  "end": 53.5
+ },
+ {
+  "word": "deux",
+  "start": 53.5,
+  "end": 53.62
+ },
+ {
+  "word": "mots,",
+  "start": 53.62,
+  "end": 53.84
+ },
+ {
+  "word": "et",
+  "start": 53.92,
+  "end": 54.14
+ },
+ {
+  "word": "le",
+  "start": 54.14,
+  "end": 54.24
+ },
+ {
+  "word": "sujet",
+  "start": 54.24,
+  "end": 54.52
+ },
+ {
+  "word": "est",
+  "start": 54.52,
+  "end": 54.76
+ },
+ {
+  "word": "passé",
+  "start": 54.76,
+  "end": 54.96
+ },
+ {
+  "word": "à",
+  "start": 54.96,
+  "end": 55.1
+ },
+ {
+  "word": "quelqu'un",
+  "start": 55.1,
+  "end": 55.56
+ },
+ {
+  "word": "d'autre.",
+  "start": 55.56,
+  "end": 55.78
+ },
+ {
+  "word": "Et",
+  "start": 56.12,
+  "end": 56.22
+ },
+ {
+  "word": "elle",
+  "start": 56.22,
+  "end": 56.28
+ },
+ {
+  "word": "m'a",
+  "start": 56.28,
+  "end": 56.44
+ },
+ {
+  "word": "dit",
+  "start": 56.44,
+  "end": 56.6
+ },
+ {
+  "word": "un",
+  "start": 56.6,
+  "end": 56.7
+ },
+ {
+  "word": "truc",
+  "start": 56.7,
+  "end": 56.94
+ },
+ {
+  "word": "que",
+  "start": 56.94,
+  "end": 57.1
+ },
+ {
+  "word": "j'entends",
+  "start": 57.1,
+  "end": 57.48
+ },
+ {
+  "word": "tout",
+  "start": 57.48,
+  "end": 57.64
+ },
+ {
+  "word": "le",
+  "start": 57.64,
+  "end": 57.76
+ },
+ {
+  "word": "temps.",
+  "start": 57.76,
+  "end": 57.92
+ },
+ {
+  "word": "Quand",
+  "start": 58.24,
+  "end": 58.38
+ },
+ {
+  "word": "j'écoute",
+  "start": 58.38,
+  "end": 58.86
+ },
+ {
+  "word": "quelqu'un",
+  "start": 58.86,
+  "end": 59.26
+ },
+ {
+  "word": "parler",
+  "start": 59.26,
+  "end": 59.44
+ },
+ {
+  "word": "anglais,",
+  "start": 59.44,
+  "end": 59.82
+ },
+ {
+  "word": "j'entends",
+  "start": 60.0,
+  "end": 60.56
+ },
+ {
+  "word": "même",
+  "start": 60.56,
+  "end": 60.7
+ },
+ {
+  "word": "ses",
+  "start": 60.7,
+  "end": 60.96
+ },
+ {
+  "word": "fautes,",
+  "start": 60.96,
+  "end": 61.32
+ },
+ {
+  "word": "mais",
+  "start": 61.32,
+  "end": 61.54
+ },
+ {
+  "word": "dès",
+  "start": 61.54,
+  "end": 61.7
+ },
+ {
+  "word": "que",
+  "start": 61.7,
+  "end": 61.94
+ },
+ {
+  "word": "c'est",
+  "start": 61.94,
+  "end": 62.14
+ },
+ {
+  "word": "à",
+  "start": 62.14,
+  "end": 62.24
+ },
+ {
+  "word": "moi,",
+  "start": 62.24,
+  "end": 62.4
+ },
+ {
+  "word": "je",
+  "start": 62.44,
+  "end": 62.68
+ },
+ {
+  "word": "ne",
+  "start": 62.68,
+  "end": 62.8
+ },
+ {
+  "word": "sors",
+  "start": 62.8,
+  "end": 62.98
+ },
+ {
+  "word": "pas",
+  "start": 62.98,
+  "end": 63.12
+ },
+ {
+  "word": "une",
+  "start": 63.12,
+  "end": 63.4
+ },
+ {
+  "word": "phrase.",
+  "start": 63.4,
+  "end": 63.68
+ },
+ {
+  "word": "Du",
+  "start": 66.1,
+  "end": 66.28
+ },
+ {
+  "word": "coup,",
+  "start": 66.28,
+  "end": 66.46
+ },
+ {
+  "word": "elle",
+  "start": 66.5,
+  "end": 66.56
+ },
+ {
+  "word": "a",
+  "start": 66.56,
+  "end": 66.66
+ },
+ {
+  "word": "fait",
+  "start": 66.66,
+  "end": 66.78
+ },
+ {
+  "word": "la",
+  "start": 66.78,
+  "end": 66.84
+ },
+ {
+  "word": "seule",
+  "start": 66.84,
+  "end": 67.06
+ },
+ {
+  "word": "chose",
+  "start": 67.06,
+  "end": 67.28
+ },
+ {
+  "word": "qui",
+  "start": 67.28,
+  "end": 67.42
+ },
+ {
+  "word": "lui",
+  "start": 67.42,
+  "end": 67.52
+ },
+ {
+  "word": "semblait",
+  "start": 67.52,
+  "end": 67.86
+ },
+ {
+  "word": "logique,",
+  "start": 67.86,
+  "end": 68.25
+ },
+ {
+  "word": "elle",
+  "start": 68.25,
+  "end": 68.52
+ },
+ {
+  "word": "a",
+  "start": 68.52,
+  "end": 68.62
+ },
+ {
+  "word": "doublé",
+  "start": 68.62,
+  "end": 69.06
+ },
+ {
+  "word": "les",
+  "start": 69.06,
+  "end": 69.16
+ },
+ {
+  "word": "inputs,",
+  "start": 69.16,
+  "end": 69.42
+ },
+ {
+  "word": "plus",
+  "start": 69.58,
+  "end": 69.84
+ },
+ {
+  "word": "de",
+  "start": 69.84,
+  "end": 70.04
+ },
+ {
+  "word": "podcasts,",
+  "start": 70.04,
+  "end": 70.32
+ },
+ {
+  "word": "plus",
+  "start": 70.5,
+  "end": 70.72
+ },
+ {
+  "word": "de",
+  "start": 70.72,
+  "end": 70.92
+ },
+ {
+  "word": "séries,",
+  "start": 70.92,
+  "end": 71.22
+ },
+ {
+  "word": "une",
+  "start": 71.24,
+  "end": 71.52
+ },
+ {
+  "word": "application",
+  "start": 71.52,
+  "end": 71.84
+ },
+ {
+  "word": "en",
+  "start": 71.84,
+  "end": 72.14
+ },
+ {
+  "word": "plus",
+  "start": 72.14,
+  "end": 72.32
+ },
+ {
+  "word": "le",
+  "start": 72.32,
+  "end": 72.46
+ },
+ {
+  "word": "soir,",
+  "start": 72.46,
+  "end": 72.7
+ },
+ {
+  "word": "six",
+  "start": 72.82,
+  "end": 73.24
+ },
+ {
+  "word": "mois",
+  "start": 73.24,
+  "end": 73.48
+ },
+ {
+  "word": "comme",
+  "start": 73.48,
+  "end": 73.64
+ },
+ {
+  "word": "ça,",
+  "start": 73.64,
+  "end": 73.84
+ },
+ {
+  "word": "six",
+  "start": 73.9,
+  "end": 74.2
+ },
+ {
+  "word": "[*]",
+  "start": 74.2,
+  "end": 74.38
+ },
+ {
+  "word": "mois,",
+  "start": 74.38,
+  "end": 74.5
+ },
+ {
+  "word": "même",
+  "start": 74.54,
+  "end": 74.96
+ },
+ {
+  "word": "silence",
+  "start": 74.96,
+  "end": 75.24
+ },
+ {
+  "word": "en",
+  "start": 75.24,
+  "end": 75.48
+ },
+ {
+  "word": "réunion.",
+  "start": 75.48,
+  "end": 75.78
+ },
+ {
+  "word": "Parce",
+  "start": 76.26,
+  "end": 76.34
+ },
+ {
+  "word": "que",
+  "start": 76.34,
+  "end": 76.54
+ },
+ {
+  "word": "comprendre",
+  "start": 76.54,
+  "end": 76.76
+ },
+ {
+  "word": "et",
+  "start": 76.76,
+  "end": 77.08
+ },
+ {
+  "word": "parler,",
+  "start": 77.08,
+  "end": 77.26
+ },
+ {
+  "word": "ce",
+  "start": 77.36,
+  "end": 77.46
+ },
+ {
+  "word": "sont",
+  "start": 77.46,
+  "end": 77.6
+ },
+ {
+  "word": "deux",
+  "start": 77.6,
+  "end": 77.82
+ },
+ {
+  "word": "zones",
+  "start": 77.82,
+  "end": 78.08
+ },
+ {
+  "word": "du",
+  "start": 78.08,
+  "end": 78.24
+ },
+ {
+  "word": "cerveau",
+  "start": 78.24,
+  "end": 78.54
+ },
+ {
+  "word": "différentes.",
+  "start": 78.54,
+  "end": 78.82
+ },
+ {
+  "word": "Deux",
+  "start": 81.08,
+  "end": 81.28
+ },
+ {
+  "word": "muscles",
+  "start": 81.28,
+  "end": 81.44
+ },
+ {
+  "word": "complètement",
+  "start": 81.44,
+  "end": 81.7
+ },
+ {
+  "word": "différents,",
+  "start": 81.7,
+  "end": 82.36
+ },
+ {
+  "word": "écouter",
+  "start": 82.5,
+  "end": 83.2
+ },
+ {
+  "word": "l'anglais",
+  "start": 83.2,
+  "end": 83.62
+ },
+ {
+  "word": "ne",
+  "start": 83.62,
+  "end": 83.72
+ },
+ {
+  "word": "t'apprendra",
+  "start": 83.72,
+  "end": 84.26
+ },
+ {
+  "word": "jamais",
+  "start": 84.26,
+  "end": 84.68
+ },
+ {
+  "word": "à",
+  "start": 84.68,
+  "end": 84.88
+ },
+ {
+  "word": "en",
+  "start": 84.88,
+  "end": 84.98
+ },
+ {
+  "word": "parler.",
+  "start": 84.98,
+  "end": 85.24
+ },
+ {
+  "word": "Toutes",
+  "start": 85.88,
+  "end": 86.14
+ },
+ {
+  "word": "les",
+  "start": 86.14,
+  "end": 86.22
+ },
+ {
+  "word": "études",
+  "start": 86.22,
+  "end": 86.56
+ },
+ {
+  "word": "le",
+  "start": 86.56,
+  "end": 86.66
+ },
+ {
+  "word": "montrent,",
+  "start": 86.66,
+  "end": 86.92
+ },
+ {
+  "word": "et",
+  "start": 87.0,
+  "end": 87.22
+ },
+ {
+  "word": "je",
+  "start": 87.22,
+  "end": 87.32
+ },
+ {
+  "word": "le",
+  "start": 87.32,
+  "end": 87.46
+ },
+ {
+  "word": "vois",
+  "start": 87.46,
+  "end": 87.74
+ },
+ {
+  "word": "tous",
+  "start": 87.74,
+  "end": 88.02
+ },
+ {
+  "word": "les",
+  "start": 88.02,
+  "end": 88.24
+ },
+ {
+  "word": "jours.",
+  "start": 88.24,
+  "end": 88.44
+ },
+ {
+  "word": "Pour",
+  "start": 88.48,
+  "end": 88.68
+ },
+ {
+  "word": "parler,",
+  "start": 88.68,
+  "end": 89.0
+ },
+ {
+  "word": "il",
+  "start": 89.1,
+  "end": 89.32
+ },
+ {
+  "word": "faut",
+  "start": 89.32,
+  "end": 89.46
+ },
+ {
+  "word": "parler.",
+  "start": 89.46,
+  "end": 89.72
+ },
+ {
+  "word": "Le",
+  "start": 90.0,
+  "end": 90.1
+ },
+ {
+  "word": "reste,",
+  "start": 90.1,
+  "end": 90.18
+ },
+ {
+  "word": "c'est",
+  "start": 90.2,
+  "end": 90.4
+ },
+ {
+  "word": "une",
+  "start": 90.4,
+  "end": 90.48
+ },
+ {
+  "word": "question",
+  "start": 90.48,
+  "end": 90.74
+ },
+ {
+  "word": "de",
+  "start": 90.74,
+  "end": 90.88
+ },
+ {
+  "word": "méthode.",
+  "start": 90.88,
+  "end": 91.32
+ },
+ {
+  "word": "Du",
+  "start": 91.7,
+  "end": 91.78
+ },
+ {
+  "word": "coup,",
+  "start": 91.78,
+  "end": 91.96
+ },
+ {
+  "word": "on",
+  "start": 92.02,
+  "end": 92.08
+ },
+ {
+  "word": "va",
+  "start": 92.08,
+  "end": 92.16
+ },
+ {
+  "word": "travailler",
+  "start": 92.16,
+  "end": 92.46
+ },
+ {
+  "word": "une",
+  "start": 92.46,
+  "end": 92.76
+ },
+ {
+  "word": "seule",
+  "start": 92.76,
+  "end": 93.06
+ },
+ {
+  "word": "chose,",
+  "start": 93.06,
+  "end": 93.32
+ },
+ {
+  "word": "passer",
+  "start": 93.38,
+  "end": 93.72
+ },
+ {
+  "word": "de",
+  "start": 93.72,
+  "end": 93.88
+ },
+ {
+  "word": "ta",
+  "start": 93.88,
+  "end": 94.04
+ },
+ {
+  "word": "phrase",
+  "start": 94.04,
+  "end": 94.22
+ },
+ {
+  "word": "en",
+  "start": 94.22,
+  "end": 94.38
+ },
+ {
+  "word": "français",
+  "start": 94.38,
+  "end": 94.66
+ },
+ {
+  "word": "[*]",
+  "start": 94.66,
+  "end": 94.94
+ },
+ {
+  "word": "à",
+  "start": 94.94,
+  "end": 95.08
+ },
+ {
+  "word": "ta",
+  "start": 95.08,
+  "end": 95.22
+ },
+ {
+  "word": "phrase",
+  "start": 95.22,
+  "end": 95.46
+ },
+ {
+  "word": "en",
+  "start": 95.46,
+  "end": 95.64
+ },
+ {
+  "word": "anglais.",
+  "start": 95.64,
+  "end": 95.92
+ },
+ {
+  "word": "Tout",
+  "start": 96.22,
+  "end": 96.3
+ },
+ {
+  "word": "ça",
+  "start": 96.3,
+  "end": 96.52
+ },
+ {
+  "word": "le",
+  "start": 96.52,
+  "end": 96.66
+ },
+ {
+  "word": "plus",
+  "start": 96.66,
+  "end": 96.86
+ },
+ {
+  "word": "vite",
+  "start": 96.86,
+  "end": 97.04
+ },
+ {
+  "word": "possible.",
+  "start": 97.04,
+  "end": 97.38
+ },
+ {
+  "word": "Au",
+  "start": 97.52,
+  "end": 97.9
+ },
+ {
+  "word": "début,",
+  "start": 97.9,
+  "end": 98.16
+ },
+ {
+  "word": "le",
+  "start": 98.22,
+  "end": 98.36
+ },
+ {
+  "word": "temps",
+  "start": 98.36,
+  "end": 98.5
+ },
+ {
+  "word": "de",
+  "start": 98.5,
+  "end": 98.64
+ },
+ {
+  "word": "latence",
+  "start": 98.64,
+  "end": 98.9
+ },
+ {
+  "word": "entre",
+  "start": 98.9,
+  "end": 99.08
+ },
+ {
+  "word": "ta",
+  "start": 99.08,
+  "end": 99.22
+ },
+ {
+  "word": "phrase",
+  "start": 99.22,
+  "end": 99.4
+ },
+ {
+  "word": "en",
+  "start": 99.4,
+  "end": 99.58
+ },
+ {
+  "word": "français",
+  "start": 99.58,
+  "end": 99.82
+ },
+ {
+  "word": "et",
+  "start": 99.82,
+  "end": 99.96
+ },
+ {
+  "word": "ta",
+  "start": 99.96,
+  "end": 100.08
+ },
+ {
+  "word": "phrase",
+  "start": 100.08,
+  "end": 100.26
+ },
+ {
+  "word": "en",
+  "start": 100.26,
+  "end": 100.42
+ },
+ {
+  "word": "anglais",
+  "start": 100.42,
+  "end": 100.72
+ },
+ {
+  "word": "est",
+  "start": 100.72,
+  "end": 101.08
+ },
+ {
+  "word": "plutôt",
+  "start": 101.08,
+  "end": 101.38
+ },
+ {
+  "word": "long,",
+  "start": 101.38,
+  "end": 101.58
+ },
+ {
+  "word": "ce",
+  "start": 101.58,
+  "end": 101.94
+ },
+ {
+  "word": "qui",
+  "start": 101.94,
+  "end": 102.0
+ },
+ {
+  "word": "t'empêche",
+  "start": 102.0,
+  "end": 102.58
+ },
+ {
+  "word": "d'être",
+  "start": 102.58,
+  "end": 102.78
+ },
+ {
+  "word": "confiant",
+  "start": 102.78,
+  "end": 103.06
+ },
+ {
+  "word": "et",
+  "start": 103.06,
+  "end": 103.16
+ },
+ {
+  "word": "ce",
+  "start": 103.16,
+  "end": 103.24
+ },
+ {
+  "word": "qui",
+  "start": 103.24,
+  "end": 103.32
+ },
+ {
+  "word": "t'empêche",
+  "start": 103.32,
+  "end": 103.68
+ },
+ {
+  "word": "d'intervenir",
+  "start": 103.68,
+  "end": 104.12
+ },
+ {
+  "word": "en",
+  "start": 104.12,
+  "end": 104.3
+ },
+ {
+  "word": "réunion",
+  "start": 104.3,
+  "end": 104.56
+ },
+ {
+  "word": "comme",
+  "start": 104.56,
+  "end": 104.7
+ },
+ {
+  "word": "tu",
+  "start": 104.7,
+  "end": 104.8
+ },
+ {
+  "word": "le",
+  "start": 104.8,
+  "end": 104.92
+ },
+ {
+  "word": "souhaiterais.",
+  "start": 104.92,
+  "end": 105.28
+ },
+ {
+  "word": "Et",
+  "start": 105.58,
+  "end": 105.66
+ },
+ {
+  "word": "plus",
+  "start": 105.66,
+  "end": 105.84
+ },
+ {
+  "word": "on",
+  "start": 105.84,
+  "end": 105.92
+ },
+ {
+  "word": "va",
+  "start": 105.92,
+  "end": 106.06
+ },
+ {
+  "word": "travailler",
+  "start": 106.06,
+  "end": 106.36
+ },
+ {
+  "word": "ce",
+  "start": 106.36,
+  "end": 106.52
+ },
+ {
+  "word": "lien",
+  "start": 106.52,
+  "end": 106.74
+ },
+ {
+  "word": "entre",
+  "start": 106.74,
+  "end": 106.92
+ },
+ {
+  "word": "le",
+  "start": 106.92,
+  "end": 107.1
+ },
+ {
+  "word": "français",
+  "start": 107.1,
+  "end": 107.38
+ },
+ {
+  "word": "et",
+  "start": 107.38,
+  "end": 107.78
+ },
+ {
+  "word": "l'anglais,",
+  "start": 107.78,
+  "end": 108.2
+ },
+ {
+  "word": "plus",
+  "start": 108.22,
+  "end": 108.54
+ },
+ {
+  "word": "ce",
+  "start": 108.54,
+  "end": 108.66
+ },
+ {
+  "word": "temps",
+  "start": 108.66,
+  "end": 108.8
+ },
+ {
+  "word": "de",
+  "start": 108.8,
+  "end": 108.88
+ },
+ {
+  "word": "latence",
+  "start": 108.88,
+  "end": 109.14
+ },
+ {
+  "word": "va",
+  "start": 109.14,
+  "end": 109.26
+ },
+ {
+  "word": "se",
+  "start": 109.26,
+  "end": 109.38
+ },
+ {
+  "word": "diminuer.",
+  "start": 109.38,
+  "end": 109.84
+ },
+ {
+  "word": "Deux",
+  "start": 113.52,
+  "end": 114.32
+ },
+ {
+  "word": "mois",
+  "start": 114.32,
+  "end": 114.44
+ },
+ {
+  "word": "plus",
+  "start": 114.44,
+  "end": 114.62
+ },
+ {
+  "word": "[*]",
+  "start": 114.62,
+  "end": 117.5
+ },
+ {
+  "word": "tard,",
+  "start": 117.5,
+  "end": 117.62
+ },
+ {
+  "word": "[*]",
+  "start": 117.86,
+  "end": 118.72
+ },
+ {
+  "word": "elle",
+  "start": 118.72,
+  "end": 118.92
+ },
+ {
+  "word": "anime.",
+  "start": 118.92,
+  "end": 119.22
+ },
+ {
+  "word": "Et",
+  "start": 119.42,
+  "end": 119.58
+ },
+ {
+  "word": "grâce",
+  "start": 119.58,
+  "end": 119.86
+ },
+ {
+  "word": "à",
+  "start": 119.86,
+  "end": 120.06
+ },
+ {
+  "word": "cette",
+  "start": 120.06,
+  "end": 120.2
+ },
+ {
+  "word": "méthode,",
+  "start": 120.2,
+  "end": 120.52
+ },
+ {
+  "word": "deux",
+  "start": 120.56,
+  "end": 120.7
+ },
+ {
+  "word": "mois",
+  "start": 120.7,
+  "end": 120.82
+ },
+ {
+  "word": "plus",
+  "start": 120.82,
+  "end": 120.94
+ },
+ {
+  "word": "tard,",
+  "start": 120.94,
+  "end": 121.14
+ },
+ {
+  "word": "elle",
+  "start": 121.2,
+  "end": 121.3
+ },
+ {
+  "word": "anime",
+  "start": 121.3,
+  "end": 121.44
+ },
+ {
+  "word": "ses",
+  "start": 121.44,
+  "end": 121.7
+ },
+ {
+  "word": "réunions.",
+  "start": 121.7,
+  "end": 122.02
+ },
+ {
+  "word": "Ses",
+  "start": 122.02,
+  "end": 122.2
+ },
+ {
+  "word": "collègues",
+  "start": 122.2,
+  "end": 122.56
+ },
+ {
+  "word": "lui",
+  "start": 122.56,
+  "end": 122.64
+ },
+ {
+  "word": "demandent",
+  "start": 122.64,
+  "end": 122.94
+ },
+ {
+  "word": "où",
+  "start": 122.94,
+  "end": 123.08
+ },
+ {
+  "word": "elle",
+  "start": 123.08,
+  "end": 123.2
+ },
+ {
+  "word": "a",
+  "start": 123.2,
+  "end": 123.34
+ },
+ {
+  "word": "appris",
+  "start": 123.34,
+  "end": 123.6
+ },
+ {
+  "word": "l'anglais.",
+  "start": 123.6,
+  "end": 123.88
+ },
+ {
+  "word": "Tu",
+  "start": 124.24,
+  "end": 124.32
+ },
+ {
+  "word": "ne",
+  "start": 124.32,
+  "end": 124.4
+ },
+ {
+  "word": "manques",
+  "start": 124.4,
+  "end": 124.56
+ },
+ {
+  "word": "pas",
+  "start": 124.56,
+  "end": 124.68
+ },
+ {
+  "word": "de",
+  "start": 124.68,
+  "end": 124.78
+ },
+ {
+  "word": "vocabulaire,",
+  "start": 124.78,
+  "end": 125.26
+ },
+ {
+  "word": "il",
+  "start": 125.32,
+  "end": 125.46
+ },
+ {
+  "word": "te",
+  "start": 125.46,
+  "end": 125.58
+ },
+ {
+  "word": "manque",
+  "start": 125.58,
+  "end": 125.78
+ },
+ {
+  "word": "juste",
+  "start": 125.78,
+  "end": 126.08
+ },
+ {
+  "word": "le",
+  "start": 126.08,
+  "end": 126.24
+ },
+ {
+  "word": "pont.",
+  "start": 126.24,
+  "end": 126.44
+ },
+ {
+  "word": "Si",
+  "start": 126.78,
+  "end": 126.86
+ },
+ {
+  "word": "l'anglais",
+  "start": 126.86,
+  "end": 127.32
+ },
+ {
+  "word": "à",
+  "start": 127.32,
+  "end": 127.44
+ },
+ {
+  "word": "l'oral",
+  "start": 127.44,
+  "end": 127.78
+ },
+ {
+  "word": "bloque",
+  "start": 127.78,
+  "end": 128.06
+ },
+ {
+  "word": "encore",
+  "start": 128.06,
+  "end": 128.3
+ },
+ {
+  "word": "ta",
+  "start": 128.3,
+  "end": 128.5
+ },
+ {
+  "word": "carrière,",
+  "start": 128.5,
+  "end": 128.8
+ },
+ {
+  "word": "écris",
+  "start": 128.88,
+  "end": 129.22
+ },
+ {
+  "word": "«",
+  "start": 129.22,
+  "end": 129.28
+ },
+ {
+  "word": "pro",
+  "start": 129.28,
+  "end": 129.4
+ },
+ {
+  "word": "»",
+  "start": 129.4,
+  "end": 129.5
+ },
+ {
+  "word": "dans",
+  "start": 129.5,
+  "end": 129.58
+ },
+ {
+  "word": "les",
+  "start": 129.58,
+  "end": 129.7
+ },
+ {
+  "word": "commentaires.",
+  "start": 129.7,
+  "end": 129.93
+ },
+ {
+  "word": "Je",
+  "start": 129.93,
+  "end": 130.44
+ },
+ {
+  "word": "t'envoie",
+  "start": 130.44,
+  "end": 130.76
+ },
+ {
+  "word": "ma",
+  "start": 130.76,
+  "end": 130.84
+ },
+ {
+  "word": "méthode,",
+  "start": 130.84,
+  "end": 131.16
+ },
+ {
+  "word": "et",
+  "start": 131.26,
+  "end": 131.52
+ },
+ {
+  "word": "sinon,",
+  "start": 131.52,
+  "end": 131.68
+ },
+ {
+  "word": "abonne-toi",
+  "start": 131.72,
+  "end": 132.02
+ },
+ {
+  "word": "si",
+  "start": 132.02,
+  "end": 132.08
+ },
+ {
+  "word": "tu",
+  "start": 132.08,
+  "end": 132.16
+ },
+ {
+  "word": "as",
+  "start": 132.16,
+  "end": 132.22
+ },
+ {
+  "word": "trouvé",
+  "start": 132.22,
+  "end": 132.34
+ },
+ {
+  "word": "cette",
+  "start": 132.34,
+  "end": 132.5
+ },
+ {
+  "word": "vidéo",
+  "start": 132.5,
+  "end": 132.7
+ },
+ {
+  "word": "utile.",
+  "start": 132.7,
+  "end": 132.92
+ },
+ {
+  "word": "Merci.",
+  "start": 134.2,
+  "end": 134.36
+ }
+]

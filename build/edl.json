@@ -1,0 +1,99 @@
+{
+  "cuts": [
+    {
+      "start": 4.952,
+      "end": 5.462,
+      "reason": "silence"
+    },
+    {
+      "start": 5.86,
+      "end": 12.66,
+      "reason": "prise-abandonnee(57%->#4)+prise-abandonnee(60%->#4)"
+    },
+    {
+      "start": 12.981,
+      "end": 14.081,
+      "reason": "silence"
+    },
+    {
+      "start": 28.143,
+      "end": 36.38,
+      "reason": "silence+prise-abandonnee(75%->#8)"
+    },
+    {
+      "start": 38.253,
+      "end": 39.048,
+      "reason": "silence"
+    },
+    {
+      "start": 63.978,
+      "end": 65.418,
+      "reason": "silence"
+    },
+    {
+      "start": 79.149,
+      "end": 80.465,
+      "reason": "silence"
+    },
+    {
+      "start": 110.084,
+      "end": 112.91,
+      "reason": "silence"
+    },
+    {
+      "start": 113.405,
+      "end": 119.22,
+      "reason": "silence+prise-abandonnee(100%->#30)"
+    },
+    {
+      "start": 133.163,
+      "end": 134.045,
+      "reason": "silence"
+    }
+  ],
+  "keep": [
+    {
+      "start": 0.0,
+      "end": 4.952,
+      "reason": "keep",
+      "text": "[*] Elle comprenait chaque mot de la réunion et elle n'a pas dit une seule [*] phrase en 50 minutes."
+    },
+    {
+      "start": 14.081,
+      "end": 28.143,
+      "reason": "keep",
+      "text": "Elle était manager, [*] elle est manager dans un groupe international, elle regardait ses séries en VO sans sous-titres, des podcasts en anglais tous les matins dans le métro, elle était abonnée à deux newsletters en anglais, [*] sa compréhension, c'était le meilleur outil."
+    },
+    {
+      "start": 36.38,
+      "end": 38.253,
+      "reason": "keep",
+      "text": "[*] elle me disait qu'elle était le meilleur."
+    },
+    {
+      "start": 39.048,
+      "end": 63.978,
+      "reason": "keep",
+      "text": "Quand je lui demandais est-ce qu'elle comprenait bien, elle me disait oui, [*] je suis meilleur que la plupart de mes collègues. Mais ce jour-là, son directeur se tourne vers elle et lui demande son avis devant tout le monde. Et elle avait la réponse complète, mais tout ça en français dans sa tête. Elle a dit I agree, [*] deux mots, et le sujet est passé à quelqu'un d'autre. Et elle m'a dit un truc que j'entends tout le temps. Quand j'écoute quelqu'un parler anglais, j'entends même ses fautes, mais dès que c'est à moi, je ne sors pas une phrase."
+    },
+    {
+      "start": 65.418,
+      "end": 79.149,
+      "reason": "keep",
+      "text": "Du coup, elle a fait la seule chose qui lui semblait logique, elle a doublé les inputs, plus de podcasts, plus de séries, une application en plus le soir, six mois comme ça, six [*] mois, même silence en réunion. Parce que comprendre et parler, ce sont deux zones du cerveau différentes."
+    },
+    {
+      "start": 80.465,
+      "end": 110.084,
+      "reason": "keep",
+      "text": "Deux muscles complètement différents, écouter l'anglais ne t'apprendra jamais à en parler. Toutes les études le montrent, et je le vois tous les jours. Pour parler, il faut parler. Le reste, c'est une question de méthode. Du coup, on va travailler une seule chose, passer de ta phrase en français [*] à ta phrase en anglais. Tout ça le plus vite possible. Au début, le temps de latence entre ta phrase en français et ta phrase en anglais est plutôt long, ce qui t'empêche d'être confiant et ce qui t'empêche d'intervenir en réunion comme tu le souhaiterais. Et plus on va travailler ce lien entre le français et l'anglais, plus ce temps de latence va se diminuer."
+    },
+    {
+      "start": 119.22,
+      "end": 133.163,
+      "reason": "keep",
+      "text": "Et grâce à cette méthode, deux mois plus tard, elle anime ses réunions. Ses collègues lui demandent où elle a appris l'anglais. Tu ne manques pas de vocabulaire, il te manque juste le pont. Si l'anglais à l'oral bloque encore ta carrière, écris « pro » dans les commentaires. Je t'envoie ma méthode, et sinon, abonne-toi si tu as trouvé cette vidéo utile."
+    }
+  ],
+  "source_duration": 134.272981
+}
