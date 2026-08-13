@@ -138,7 +138,7 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Def,DejaVu Sans,46,&H00FFFFFF,&H00FFFFFF,&H55000000,&H55000000,1,0,0,0,100,100,0,0,3,16,0,2,90,90,200,1
+Style: Def,Inter SemiBold,46,&H00FFFFFF,&H00FFFFFF,&H55000000,&H55000000,0,0,0,0,100,100,0,0,3,16,0,2,90,90,200,1
 
 [Events]
 Format: Layer, Start, End, Style, MarginL, MarginR, MarginV, Effect, Text
