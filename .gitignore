@@ -1,0 +1,10 @@
+# Montage pipeline — sources & heavy intermediates are not versioned
+rushes/          # sources READ-ONLY (binaires lourds)
+assets/          # inserts generes (Higgsfield, images)
+export/          # livrables finaux
+build/*.mp4
+build/*.wav
+build/*.png
+build/segments.txt
+# whisper model cache
+*.pt
