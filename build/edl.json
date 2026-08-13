@@ -17,13 +17,8 @@
     },
     {
       "start": 28.143,
-      "end": 36.38,
-      "reason": "silence+prise-abandonnee(75%->#8)"
-    },
-    {
-      "start": 38.253,
       "end": 39.048,
-      "reason": "silence"
+      "reason": "silence+prise-abandonnee(75%->#8)+queue-prise-abandonnee(valide)"
     },
     {
       "start": 63.978,
@@ -31,9 +26,19 @@
       "reason": "silence"
     },
     {
+      "start": 66.1,
+      "end": 66.5,
+      "reason": "tic:du coup(valide)"
+    },
+    {
       "start": 79.149,
       "end": 80.465,
       "reason": "silence"
+    },
+    {
+      "start": 91.7,
+      "end": 92.02,
+      "reason": "tic:du coup(valide)"
     },
     {
       "start": 110.084,
@@ -65,28 +70,28 @@
       "text": "Elle était manager, [*] elle est manager dans un groupe international, elle regardait ses séries en VO sans sous-titres, des podcasts en anglais tous les matins dans le métro, elle était abonnée à deux newsletters en anglais, [*] sa compréhension, c'était le meilleur outil."
     },
     {
-      "start": 36.38,
-      "end": 38.253,
-      "reason": "keep",
-      "text": "[*] elle me disait qu'elle était le meilleur."
-    },
-    {
       "start": 39.048,
       "end": 63.978,
       "reason": "keep",
       "text": "Quand je lui demandais est-ce qu'elle comprenait bien, elle me disait oui, [*] je suis meilleur que la plupart de mes collègues. Mais ce jour-là, son directeur se tourne vers elle et lui demande son avis devant tout le monde. Et elle avait la réponse complète, mais tout ça en français dans sa tête. Elle a dit I agree, [*] deux mots, et le sujet est passé à quelqu'un d'autre. Et elle m'a dit un truc que j'entends tout le temps. Quand j'écoute quelqu'un parler anglais, j'entends même ses fautes, mais dès que c'est à moi, je ne sors pas une phrase."
     },
     {
-      "start": 65.418,
+      "start": 66.5,
       "end": 79.149,
       "reason": "keep",
-      "text": "Du coup, elle a fait la seule chose qui lui semblait logique, elle a doublé les inputs, plus de podcasts, plus de séries, une application en plus le soir, six mois comme ça, six [*] mois, même silence en réunion. Parce que comprendre et parler, ce sont deux zones du cerveau différentes."
+      "text": "elle a fait la seule chose qui lui semblait logique, elle a doublé les inputs, plus de podcasts, plus de séries, une application en plus le soir, six mois comme ça, six [*] mois, même silence en réunion. Parce que comprendre et parler, ce sont deux zones du cerveau différentes."
     },
     {
       "start": 80.465,
+      "end": 91.7,
+      "reason": "keep",
+      "text": "Deux muscles complètement différents, écouter l'anglais ne t'apprendra jamais à en parler. Toutes les études le montrent, et je le vois tous les jours. Pour parler, il faut parler. Le reste, c'est une question de méthode."
+    },
+    {
+      "start": 92.02,
       "end": 110.084,
       "reason": "keep",
-      "text": "Deux muscles complètement différents, écouter l'anglais ne t'apprendra jamais à en parler. Toutes les études le montrent, et je le vois tous les jours. Pour parler, il faut parler. Le reste, c'est une question de méthode. Du coup, on va travailler une seule chose, passer de ta phrase en français [*] à ta phrase en anglais. Tout ça le plus vite possible. Au début, le temps de latence entre ta phrase en français et ta phrase en anglais est plutôt long, ce qui t'empêche d'être confiant et ce qui t'empêche d'intervenir en réunion comme tu le souhaiterais. Et plus on va travailler ce lien entre le français et l'anglais, plus ce temps de latence va se diminuer."
+      "text": "on va travailler une seule chose, passer de ta phrase en français [*] à ta phrase en anglais. Tout ça le plus vite possible. Au début, le temps de latence entre ta phrase en français et ta phrase en anglais est plutôt long, ce qui t'empêche d'être confiant et ce qui t'empêche d'intervenir en réunion comme tu le souhaiterais. Et plus on va travailler ce lien entre le français et l'anglais, plus ce temps de latence va se diminuer."
     },
     {
       "start": 119.22,

@@ -1,10 +1,12 @@
-# Montage pipeline — sources & heavy intermediates are not versioned
+# Montage pipeline — sources & heavy media are not versioned
 rushes/          # sources READ-ONLY (binaires lourds)
 assets/          # inserts generes (Higgsfield, images)
-export/          # livrables finaux
+export/*.mp4     # livrables video finaux (lourds)
 build/*.mp4
 build/*.wav
 build/*.png
+build/checkframes/
 build/segments.txt
+# on VERSIONNE : scripts/, build/*.json, export/*.srt, export/*.ass (auditables)
 # whisper model cache
 *.pt
