@@ -1,12 +1,14 @@
 # Montage pipeline — sources & heavy media are not versioned
-rushes/          # sources READ-ONLY (binaires lourds)
-assets/          # inserts generes (Higgsfield, images)
-export/*.mp4     # livrables video finaux (lourds)
+# (git ne supporte pas les commentaires en fin de ligne : 1 motif par ligne)
+rushes/
+assets/
+export/*.mp4
 build/*.mp4
 build/*.wav
 build/*.png
 build/checkframes/
+build/finalcheck/
 build/segments.txt
-# on VERSIONNE : scripts/, build/*.json, export/*.srt, export/*.ass (auditables)
-# whisper model cache
+# on VERSIONNE : scripts/, build/*.json, export/*.srt, export/*.ass
+# cache modele whisper
 *.pt

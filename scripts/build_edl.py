@@ -111,8 +111,16 @@ for i in range(len(segments)):
                              "prise-abandonnee(%.0f%%->#%d)" % (100 * c, j)])
             break
 
+# ---- 3bis. Coupes validees au point de controle Phase 2 -------------------
+# Validees explicitement par l'utilisateur (EDL serre + retrait des "du coup").
+MANUAL_CUTS = [
+    [36.38, 38.25, "queue-prise-abandonnee(valide)"],   # "elle me disait qu'elle etait le meilleur"
+    [66.10, 66.50, "tic:du coup(valide)"],
+    [91.70, 92.02, "tic:du coup(valide)"],
+]
+
 # ---- 4. Fusionner tous les intervalles a couper ---------------------------
-all_cuts = cuts + tic_cuts + rep_cuts
+all_cuts = cuts + tic_cuts + rep_cuts + MANUAL_CUTS
 all_cuts.sort()
 merged = []
 for c in all_cuts:
